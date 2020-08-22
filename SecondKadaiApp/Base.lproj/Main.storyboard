@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8h-Y8-tcf">
-                                <rect key="frame" x="191" y="265" width="32" height="34"/>
+                                <rect key="frame" x="100" y="265" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -37,17 +37,25 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="vGR-se-Q58" firstAttribute="top" secondItem="x8h-Y8-tcf" secondAttribute="bottom" constant="100" id="27h-Yg-udW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x8h-Y8-tcf" secondAttribute="trailing" constant="100" id="2Fh-xh-yIW"/>
                             <constraint firstItem="i0q-0f-WLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qO-gV-0bO"/>
                             <constraint firstItem="vGR-se-Q58" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="868-ZH-2W2"/>
+                            <constraint firstItem="vGR-se-Q58" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LPI-jh-JGP"/>
+                            <constraint firstItem="x8h-Y8-tcf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="OSV-SY-j4U"/>
+                            <constraint firstItem="x8h-Y8-tcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RK5-Lg-Meh"/>
                             <constraint firstItem="i0q-0f-WLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U99-zI-X50"/>
                             <constraint firstItem="i0q-0f-WLK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="VPK-rK-kpz"/>
+                            <constraint firstItem="i0q-0f-WLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dKn-BN-XeW"/>
                             <constraint firstItem="x8h-Y8-tcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpE-mw-QQg"/>
                             <constraint firstItem="x8h-Y8-tcf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q1v-lA-lG4"/>
                             <constraint firstItem="x8h-Y8-tcf" firstAttribute="top" secondItem="i0q-0f-WLK" secondAttribute="bottom" constant="100" id="vRd-Xc-kic"/>
+                            <constraint firstItem="vGR-se-Q58" firstAttribute="top" secondItem="x8h-Y8-tcf" secondAttribute="bottom" constant="100" id="ydz-O7-QTr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="x8h-Y8-tcf" id="cgJ-fi-MFk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="QA9-ml-phB"/>
                     </view>
                     <navigationItem key="navigationItem" id="jpR-ct-AKz"/>
+                    <connections>
+                        <outlet property="helloLabel" destination="EBg-xY-H7r" id="80d-b1-eAO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3y-yh-AsY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="OBG-nC-svZ" userLabel="Exit" sceneMemberID="exit"/>
